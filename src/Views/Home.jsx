@@ -26,7 +26,7 @@ import {
   Briefcase,
 } from "lucide-react";
 
-import profileImg from "../assets/profile.jpeg";
+import profileImg from "../assets/profiles.jpeg";
 import lmsPort from "../assets/lmsport.jpg";
 import billcostro from "../assets/billcostro.jpg";
 import product from "../assets/product.jpg";
