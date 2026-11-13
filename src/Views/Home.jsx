@@ -107,7 +107,7 @@ const PROJECTS = [
     kind: "Vue",
     desc: "A modern learning management system that streamlines content delivery, learning workflows and student evaluation.",
     tags: ["VueJS", "JavaScript", "Tailwind CSS", "API"],
-    github: "https://github.com/jaikumar-05",
+    // github: "https://github.com/jaikumar-05",
     live: null,
   },
   {
@@ -117,7 +117,7 @@ const PROJECTS = [
     kind: "React",
     desc: "Student assessment platform where students take quizzes, track performance and redeem reward points.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "API Integration"],
-    github: "https://github.com/jaikumar-05",
+    // github: "https://github.com/jaikumar-05",
     live: null,
   },
   {
@@ -127,7 +127,7 @@ const PROJECTS = [
     kind: "Vue",
     desc: "Scalable cost management system that analyses spending patterns with real-time data visualisation.",
     tags: ["VueJS", "Vuex", "Tailwind CSS", "API"],
-    github: "https://github.com/jaikumar-05",
+    // github: "https://github.com/jaikumar-05",
     live: null,
   },
   {
@@ -147,7 +147,7 @@ const PROJECTS = [
     kind: "Django",
     desc: "Healthcare platform managing 200+ diagnostic centres.",
     tags: ["Bootstrap", "Django", "PostgreSQL"],
-    github: "https://github.com/jaikumar-05",
+    // github: "https://github.com/jaikumar-05",
     live: null,
   },
   {
@@ -157,7 +157,7 @@ const PROJECTS = [
     kind: "Vue",
     desc: "Personalised learning platform with account management and activity tracking.",
     tags: ["VueJS", "Vuex", "Tailwind CSS", "API"],
-    github: "https://github.com/jaikumar-05",
+    // github: "https://github.com/jaikumar-05",
     live: null,
   },
   {
@@ -169,7 +169,7 @@ const PROJECTS = [
     kind: "MERN",
     desc: "Full-stack web application built on the MERN stack, with a REST API and a MongoDB database.",
     tags: ["MongoDB", "Express.js", "ReactJS", "Node.js"],
-    github: "https://github.com/jaikumar-05",
+   
     live: null,
   },
 ];
