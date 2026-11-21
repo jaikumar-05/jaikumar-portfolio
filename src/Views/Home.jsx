@@ -26,7 +26,7 @@ import {
   Briefcase,
 } from "lucide-react";
 
-import profileImg from "../assets/profiles.jpeg";
+import profileImg from "../assets/Professional.png";
 import lmsPort from "../assets/lmsport.jpg";
 import billcostro from "../assets/billcostro.jpg";
 import product from "../assets/product.jpg";
@@ -169,7 +169,7 @@ const PROJECTS = [
     kind: "MERN",
     desc: "Full-stack web application built on the MERN stack, with a REST API and a MongoDB database.",
     tags: ["MongoDB", "Express.js", "ReactJS", "Node.js"],
-   
+
     live: null,
   },
 ];
@@ -547,6 +547,12 @@ function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
+  useEffect(() => {
+    if (status !== "success" && status !== "error") return;
+    const t = setTimeout(() => setStatus("idle"), 5000);
+    return () => clearTimeout(t);
+  }, [status]);
+
   const handleChange = (e) =>
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
 
@@ -559,14 +565,15 @@ function ContactForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          service_id: "YOUR_SERVICE_ID",
-          template_id: "YOUR_TEMPLATE_ID",
-          user_id: "YOUR_PUBLIC_KEY",
+          service_id: "service_x35cdqg",
+          template_id: "template_86spchg",
+          user_id: "rQuAK-jQGPPfqwS85",
           template_params: {
-            from_name: form.name,
-            from_email: form.email,
+            name: form.name,
+            email: form.email,
             message: form.message,
-            to_name: "Jaikumar",
+            title: "Portfolio message",
+            time: new Date().toLocaleString(),
           },
         }),
       });
